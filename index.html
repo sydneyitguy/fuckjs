@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <body>
+    <h1>복사 / 붙여넣기, 오른쪽 마우스 클릭 방지 해제</h1>
+    <a href="javascript:function r(d){d.oncontextmenu=null;d.onselectstart=null;d.ondragstart=null;d.onkeydown=null;d.onmousedown=null; d.body.oncontextmenu=null;d.body.onselectstart=null;d.body.ondragstart=null;d.body.onkeydown=null; d.body.onmousedown=null;};function unify(w){r(w.document);if(w.frames.length>0){for(var i=0;i<w.frames.length;i++){try{unify(w.frames[i].window);}catch(e){}};};}; unify(self);jQuery(document).unbind();jQuery('div, a, p, body, html, section').unbind();" class="btn">여기를 끌어서 북마크바에 넣으세요</a>
+  </body>
+</html>
